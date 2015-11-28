@@ -7,6 +7,12 @@ var reactExternal = {
   amd: 'react'
 };
 
+var immutableExternal = {
+  root: 'Immutable',
+  commonjs2: 'immutable',
+  commonjs: 'immutable',
+  amd: 'immutable'
+}
 module.exports = {
   devtool: 'eval',
   entry: './src/index',
@@ -14,6 +20,7 @@ module.exports = {
     path: __dirname + '/build/',
     filename: 'griddle-selection-plugin.js',
     publicPath: '/build/',
+    library: 'GriddleSelectionPlugin',
     libraryTarget: 'umd'
   },
   plugins: [
@@ -24,7 +31,7 @@ module.exports = {
   externals: {
     'react': reactExternal,
     'griddle-core': 'griddle-core',
-    'immutable': 'immutable'
+    'immutable': immutableExternal
   },
   module: {
     loaders: [{
