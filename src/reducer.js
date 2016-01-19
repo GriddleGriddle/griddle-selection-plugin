@@ -1,9 +1,8 @@
 import Immutable from 'immutable';
-import extend from 'lodash.assign';
 
 //TODO: Toss this in a helper somewhere -- this and subgrid are using it
 function getProperties(columns) {
-  return extend({
+  return Object.assign({
     childrenPropertyName: 'children',
     columns: []
   }, columns);
