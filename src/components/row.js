@@ -25,7 +25,7 @@ class SelectColumn extends Component {
 }
 
 function getSelectColumn(selected, griddleKey, events) {
-  const checkbox = <SelectColumn 
+  const checkbox = <SelectColumn
     griddleKey={griddleKey}
     selected={selected}
     events={events} />
@@ -43,8 +43,8 @@ export default RowComponent => class extends Component {
   render() {
     const { rowData } = this.props;
 
-    const expandColumn = getSelectColumn(rowData.selected, rowData.griddleKey, this.props.events);
- 
+    const expandColumn = getSelectColumn(rowData.__metadata.selected, rowData.__metadata.griddleKey, this.props.events);
+
     //TODO: this should probably have a css class associated with it.
     const expandColumnProperties = {
       expandColumn:
