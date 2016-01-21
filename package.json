@@ -1,6 +1,6 @@
 {
   "name": "griddle-selection-plugin",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A plugin for selecting rows.",
   "main": "./build/griddle-selection-plugin.js",
   "scripts": {
